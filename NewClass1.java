@@ -54,7 +54,6 @@ public class NewClass1 {
                 sc.nextLine();
                 for (int i = 1; i < N + 1; i++) {
                     String name = sc.next();
-
                     if (i > 4) {
                         int random = rand.nextInt(4) + 1;
                         if (random > 0) {
@@ -71,8 +70,9 @@ public class NewClass1 {
                                 Slytherin.add(name);
                             }
                             morethan4(name, random);
+                        }else{
+                            Gryffindor.add(name);
                         }
-
                     } else if (i <= 4) {
                         if (i == 1) {
                             Gryffindor.add(name);
@@ -127,7 +127,6 @@ public class NewClass1 {
                     System.out.println("this is the end : Want to reset ? ");
                     System.out.println("0 > dont reset");
                     System.out.println("1 >  reset");
-                    System.out.println("2 >  show house");
                     int state2 = sc.nextInt();
                     if (state2 == 0) {
                         reset = true;
