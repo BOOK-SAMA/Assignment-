@@ -53,7 +53,7 @@ public class NewClass1 {
                 ArrayList<String> Slytherin = new ArrayList<String>();
                 sc.nextLine();
                 for (int i = 1; i < N + 1; i++) {
-                    String name = sc.next();
+                    String name = sc.nextLine();
                     if (i > 4) {
                         int random = rand.nextInt(4) + 1;
                         if (random > 0) {
@@ -89,7 +89,6 @@ public class NewClass1 {
 
                         lessthan4(name, i);
                     }
-                    sc.nextLine();
                 }
                 System.out.println("this is the end : Want to reset ? ");
                 System.out.println("0 > dont reset");
